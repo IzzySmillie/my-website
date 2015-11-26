@@ -90,3 +90,24 @@ footer{
   padding:2em;
   margin-top:1.2em;
 }
+
+footer p{
+  font-size:0.8em;
+}
+
+@media(max-width: 400px){
+  .header-wrap{
+    margin-bottom:0;
+  }
+
+  #social{
+    float:none;
+    margin-top:0px;
+    padding:0.4em;
+  }
+
+  #title{
+    float:none;
+    padding:0.4em;
+  }
+}
