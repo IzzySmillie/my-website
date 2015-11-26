@@ -3,6 +3,16 @@
   padding:0px;
 }
 
+a{
+  text-decoration:none;
+  color:#692323;
+}
+
+a:hover{
+  color:#000;
+  text-decoration: none;
+}
+
 .header{
   text-align:center;
   padding:1.5em 1em;
@@ -11,24 +21,20 @@
 .header-wrap{
   max-width:55em;
   margin:0 auto;
-  display:inline-block;
+  margin-bottom:1em;
+  vertical-align: baseline;
 }
 
 #title{
   font-size:1.5em;
   font-weight:300;
-  margin-bottom:0;
   letter-spacing:1px;
+  float:left;
 }
 
-#title a{
-  text-decoration: none;
-  color:#692323;
-}
-
-#title a:hover{
-  color:#000;
-  text-decoration: none;
+#social{
+  float:right;
+  margin-top:0.35em;
 }
 
 #social a{
@@ -43,8 +49,10 @@
 
 body{
   font-family:Montserrat,helvetica,sans-serif;
-  font-size:1.5em;
+  font-size:1.2em;
+  text-align:center;
   background-color:#fff;
+  color:;
 }
 
 .photo{
@@ -54,4 +62,31 @@ body{
   width:100%;
 }
 
+h2{
+  font-size:1.8em;
+  font-weight:300;
+  margin-top:0.5em;
+}
 
+#main-content{
+  max-width:40em;
+  margin:0 auto;
+  padding:1em;
+}
+
+#main-content p{
+  margin-top:1em;
+  margin-bottom:1em;
+  line-height:1.3em;
+}
+
+.social-text{
+  text-transform: uppercase;
+  font-size:0.8em;
+}
+
+footer{
+  background-color:#e8e8e8;
+  padding:2em;
+  margin-top:1.2em;
+}
