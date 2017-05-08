@@ -1,28 +1,32 @@
 *{
   margin:0px;
   padding:0px;
+  box-sizing: border-box;
 }
 
 a{
   text-decoration:none;
-  color:#692323;
+  color:#299690;
 }
 
 a:hover{
-  color:#000;
+  color:#a6a89f;
   text-decoration: none;
 }
 
 .header{
   text-align:center;
-  padding:1.5em 1em;
+  max-width: 1600px;
+  margin: 0 auto;
+  padding: 30px;
 }
 
 .header-wrap{
-  max-width:55em;
+  max-width:1600px;
   margin:0 auto;
   margin-bottom:1em;
   vertical-align: baseline;
+  padding: 0 10px 0 0;
 }
 
 #title{
@@ -32,23 +36,27 @@ a:hover{
   float:left;
 }
 
+#title a:hover {
+  color: #299690;
+}
+
 #social{
   float:right;
   margin-top:0.35em;
 }
 
 #social a{
-  color:#000;
+  color:#a6a89f;
   text-decoration: none;
 }
 
 #social a:hover{
-  color:#692323;
+  color:#299690;
   text-decoration: none;
 }
 
 body{
-  font-family:Montserrat,helvetica,sans-serif;
+  font-family: 'Muli', sans-serif;
   font-size:1.2em;
   text-align:center;
   background-color:#fff;
@@ -86,13 +94,61 @@ h2{
 }
 
 footer{
-  background-color:#e8e8e8;
-  padding:2em;
+  padding:1em;
   margin-top:1.2em;
 }
 
 footer p{
   font-size:0.8em;
+  color: #a6a89f;
+}
+
+.grid {
+  max-width: 1600px;
+  margin: 0 auto;
+  padding: 0 10px;
+}
+
+.grid:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.grid-item { 
+  float: left;
+  width: 100%; 
+  margin: 0.5% 0.5% 0.5% 0;
+}
+
+.width2 { 
+  width: 100%; 
+}
+
+.far-right {
+  margin: 0.5% 0 0.5% 0.5%;
+}
+
+.mid-one {
+  margin: 0.5%;
+}
+
+.grid-item-inner {
+  background: #299690;
+  color: #fff;
+  padding-bottom: 100%;
+  position: relative;
+}
+
+.grid-item-inner p {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 100%;
+  text-align: center;
+  font-weight: 100;
+  padding: 0 5px;
+  line-height: 1.7;
 }
 
 @media(max-width: 400px){
@@ -109,5 +165,21 @@ footer p{
   #title{
     float:none;
     padding:0.4em;
+  }
+}
+
+@media(min-width: 768px) {
+  .grid {
+    padding: 0 30px;
+  }
+}
+
+@media(min-width: 900px) {
+  .grid-item {
+    width: 32.5%; 
+  }
+
+  .width2 { 
+    width: 49.2%; 
   }
 }
